@@ -1,10 +1,15 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     line-height: 1.6;
+    background-image: url('C:/Users/User/Downloads/2d6ece16dd7ab4ed2701047586bc80f0cb68835c/CSS Advanced/Object.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Adjust the text color for better readability */
 }
 
 img {
@@ -15,7 +20,7 @@ img {
 
 /* Header Styles */
 header {
-    background-color: #f4f4f4;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 1rem;
 }
 
@@ -39,7 +44,7 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff; /* Changed color to white for better readability */
     font-weight: bold;
 }
 
@@ -50,19 +55,25 @@ main section {
 }
 
 /* Intro Section */
-section div h1 {
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    font-family: 'Spin Cycle OT', 'Source Sans Pro', sans-serif; /* Using the custom fonts */
+}
+
+.hero-section .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-section div span {
+.hero-section .hero-tags span {
     display: inline-block;
     margin: 0.5rem;
     font-size: 1.2rem;
-    color: #555;
+    color: #fff; /* Changed color to white for better readability */
 }
 
-section div button {
+.hero-section .register-btn {
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
     background-color: #007BFF;
@@ -73,36 +84,42 @@ section div button {
     font-size: 1rem;
 }
 
-section div button:hover {
+.hero-section .register-btn:hover {
     background-color: #0056b3;
 }
 
 /* Learn From the Pros */
-section h2 {
+.learn-from-pros {
+    padding: 50px 20px;
+    font-family: 'Source Sans Pro', sans-serif; /* Using the custom fonts */
+}
+
+.learn-from-pros h2 {
     font-size: 2rem;
+    text-align: center;
     margin-bottom: 1rem;
 }
 
-section div div {
+.learn-from-pros .pro-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
 }
 
-section div div div {
+.learn-from-pros .pro-card {
     text-align: center;
     max-width: 300px;
 }
 
-section div div div h3 {
+.learn-from-pros .pro-card h3 {
     margin: 0.5rem 0;
     font-size: 1.2rem;
-    color: #333;
+    color: #fff; /* Changed color to white for better readability */
 }
 
-section div div div p {
-    color: #777;
+.learn-from-pros .pro-card p {
+    color: #ccc; /* Changed color to light grey for better readability */
 }
 
 /* Free Membership Section */
