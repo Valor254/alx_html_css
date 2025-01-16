@@ -1,0 +1,325 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    --primary-color: #FF6565;
+    --secondary-color: #ffffff;
+    background: url('images/headphones_hero_1.jpg');
+
+    --max-width: 1000px;
+}
+
+/* General Styles */
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Spin Cycle OT', sans-serif;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+/* Navigation Menu */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: var(--bg-image) no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    text-align: center;
+
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-button:active {
+    opacity: 0.9;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+}
+/* Enable smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* "What We Do" Section Styling */
+.what-we-do {
+    padding: 60px 20px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+/* Feature Boxes */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.feature {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon Styling */
+.feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+/* Heading and Paragraph Styling */
+.feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+/* "Our Results" Section Styling */
+#our-results {
+    background-image: url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; /* Background scrolls with section */
+    padding: 60px 20px;
+    color: var(--secondary-color);
+}
+
+#our-results .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center; /* Center content inside the container */
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    gap: 40px; /* Add space between paragraph and grid */
+}
+
+/* Description Paragraph */
+#our-results .description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0; /* Remove bottom margin to rely on container gap */
+}
+
+/* Results Grid */
+.results-grid {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center the grid */
+    gap: 30px; /* Space between grid items */
+}
+
+/* Individual Result Item */
+.result-item {
+    text-align: center; /* Center content inside each item */
+    max-width: 150px; /* Set a fixed width for items */
+}
+
+/* Result Image */
+.result-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Result Item Description */
+.result-item p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .results-grid {
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        gap: 20px; /* Reduce gap for smaller screens */
+    }
+}
+@media (max-width: 480px) {
+    .results-grid {
+        flex-direction: column; /* Ensure items are stacked in column on mobile */
+    }
+}
+/* "Contact Us" Section Styling */
+.contact-us {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-us h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.contact-us hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px auto;
+    width: 60%;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.contact-us .cta-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.contact-us .cta-button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .contact-us input,
+    .contact-us textarea {
+        width: 90%;
+    }
+}
+
+
+.contact-us .cta-button {
+    margin-top: 30px; /* Space above the button */
+}
